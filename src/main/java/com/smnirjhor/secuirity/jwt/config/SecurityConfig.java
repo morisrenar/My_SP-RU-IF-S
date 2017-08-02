@@ -1,4 +1,4 @@
-package com.smnirjhor.secuirity.config;
+package com.smnirjhor.secuirity.jwt.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -7,10 +7,10 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-@EnableWebSecurity
+//@EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-    public static final String USER = "USER";
+    /*public static final String USER = "USER";
     public static final String ADMIN = "ADMIN";
 
     @Autowired
@@ -38,5 +38,5 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
         auth.userDetailsService(myAppUserDetailsService).passwordEncoder(passwordEncoder);
-    }
+    }*/
 }

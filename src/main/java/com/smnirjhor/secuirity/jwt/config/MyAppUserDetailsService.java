@@ -1,4 +1,4 @@
-package com.smnirjhor.secuirity.config;
+package com.smnirjhor.secuirity.jwt.config;
 
 import java.util.Arrays;
 
