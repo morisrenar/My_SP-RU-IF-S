@@ -9,17 +9,22 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DummyController {
 
-    @RequestMapping("/globalBitch")
+    @RequestMapping("/global/Bitch")
     public String globalBitch() {
         return "global bitch";
     }
 
-    @RequestMapping("/userBitch")
+    @RequestMapping("/user/Bitch")
     public String userBitch() {
         return "user bitch";
     }
 
-    @RequestMapping("/adminBitch")
+    @RequestMapping("/guest/Bitch")
+    public String guestBitch() {
+        return "guest bitch";
+    }
+
+    @RequestMapping("/admin/Bitch")
     public String adminBitch() {
         return "admin bitch";
     }
